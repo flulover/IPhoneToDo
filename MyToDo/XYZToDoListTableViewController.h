@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface XYZToDoListTableViewController : UITableViewController
-    -(IBAction)unwindToList:(UIStoryboardSegue *)segue;
+
+@property NSMutableArray *toDoItems;
+
+-(IBAction)unwindToList:(UIStoryboardSegue *)segue;
+
 @end
